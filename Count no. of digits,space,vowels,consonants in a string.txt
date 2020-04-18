@@ -1,0 +1,15 @@
+str=input("Enter String:\n").lower()
+space,digit,vowel,consonant=0,0,0,0
+for i in str:
+    if i.isspace():
+        space+=1
+    elif i.isdigit():
+        digit+=1
+    elif i.isalpha():
+        if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+            vowel+=1
+        else:
+            consonant+=1
+
+print(f"No. of Consonants: {consonant}\nNo. of vowels: {vowel}\nNo. of digits: {digit}\nNo. of spaces: {space}")
+
